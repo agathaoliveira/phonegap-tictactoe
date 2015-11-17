@@ -13,14 +13,14 @@
     <string>300</string>
     </gap:config-file>
 
-    <name>Tic Tac Toe</name>
+    <name>Dominoes</name>
 
     <description>
-        A multiplayer Tic Tac Toe game.
+        A multiplayer Dominoes game.
     </description>
 
-    <author href="http://yoav-zibin.github.io/homepage/" email="yoav.zibin@gmail.com">
-        Yoav Zibin
+    <author href="http://agathaoliveira.github.io/homepage/" email="agathalco@gmail.com">
+        Agatha Oliveira
     </author>
 
     <!--
@@ -91,8 +91,8 @@
 
     <!-- see: https://build.phonegap.com/plugins/1246 -->
     <gap:plugin name="com.phonegap.plugins.facebookconnect" source="pgb" version="0.9.0">
-        <param name="APP_ID" value="1505618116376825" />
-        <param name="APP_NAME" value="Tic Tac Toe" />
+        <param name="APP_ID" value="464151760437469" />
+        <param name="APP_NAME" value="Dominoes" />
     </gap:plugin>
 
     <!--
