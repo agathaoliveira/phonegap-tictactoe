@@ -3,7 +3,7 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
-        id          = "com.gamingplatform.tictactoe"
+        id          = "com.gamingplatform.dominoes"
         versionCode = "11"
         version     = "4.0.0" >
     <!-- versionCode is optional and Android only:
@@ -138,23 +138,23 @@
     </gap:plugin>
 
     <!-- To launch the app by a link like this (you can't type it in directly in the browser! it has to be a link on a webpage):
-        tictactoe://
+        dominoes://
         For android, see
           https://appurl.org/docs-handling-android
         For iOS, see
           http://docs.build.phonegap.com/en_US/configuring_custom_urls.md.html
     -->
     <gap:config-file platform="android" parent="/manifest/application" mode="add" >
-      <activity android:name="com.gamingplatform.tictactoe.TicTacToe" android:label="Tic Tac Toe">
+      <activity android:name="com.gamingplatform.dominoes.Dominoes" android:label="Dominoes">
         <intent-filter>
           <action android:name="android.intent.action.VIEW"/>
           <category android:name="android.intent.category.DEFAULT"/>
           <category android:name="android.intent.category.BROWSABLE"/>
-          <data android:scheme="tictactoe"/>
+          <data android:scheme="dominoes"/>
         </intent-filter>
       </activity>
     </gap:config-file>
     <gap:url-scheme role="None">
-      <scheme>tictactoe</scheme>
+      <scheme>dominoes</scheme>
     </gap:url-scheme>
 </widget>
