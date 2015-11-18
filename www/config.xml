@@ -145,7 +145,8 @@
           http://docs.build.phonegap.com/en_US/configuring_custom_urls.md.html
     -->
     <gap:config-file platform="android" parent="/manifest/application" mode="add" >
-      <activity android:name="com.gamingplatform.dominoes.Dominoes" android:label="Dominoes">
+      <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"  
+        android:name=".Dominoes" android:label="Dominoes">
         <intent-filter>
           <action android:name="android.intent.action.VIEW"/>
           <category android:name="android.intent.category.DEFAULT"/>
@@ -154,7 +155,7 @@
         </intent-filter>
       </activity>
     </gap:config-file>
-    <gap:url-scheme role="None">
+    <gap:url-scheme>
       <scheme>dominoes</scheme>
     </gap:url-scheme>
 </widget>
